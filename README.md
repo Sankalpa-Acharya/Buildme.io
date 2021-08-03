@@ -8,6 +8,6 @@ Buildme.io will help you to design very simple website on browser and give you t
 
 ## Screenshots
 
-![App Screenshot](https://freeimage.host/i/AmUEuI)
+![App Screenshot](img/ss1.png)
 
   
