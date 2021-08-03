@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-section{
+    background-color:#ebeaeb ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+}
+.top-section h3{
+    color: #111439;
+    font-family: 'Baloo 2', cursive;
+    font-size: 22px;
+}
+.top-section span{
+    font-size: 14px;
+}
+
+.main-section{
+    border: 2px solid black ;
+    border-style: dashed;
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    top: 12px;
+}
+#download{
+    width: 70px;
+    height: 20px;
+    color: white;
+    background-color:lightgreen;
+    outline: none;
+    margin:8px 0px ;
+
+}
+.design{
+    border: 1px solid black ;
+    float: left;
+    width: 50px;
+    height: 300px;
+   position: relative;
+   top:128px;
+   left: 7px;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.design img{
+    margin: 12px 0px;
+    cursor: pointer;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    width: 40px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.download p:hover{
+    color: green;
+}
+
