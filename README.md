@@ -8,10 +8,10 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 
 ## Buildme.io Building Process!
 
-#### 10%
+#### 10% (simple design) 
 
 ![App Screenshot](img/ss1.png)
 
-#### 20%
+#### 20% (added some JavaScript)
 
 ![App Screenshot](img/ss2.PNG)
