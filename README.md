@@ -6,8 +6,10 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 ## Where is Buildme.io ? 
  Will be available soon!
 
-## Buildme.io(v1.0.0)
+## Buildme.io
 
 ![App Screenshot](img/ss1.png)
 
-  
+### Little Change in Buildme.io
+
+![App Screenshot](img/ss2.png)
