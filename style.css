@@ -35,7 +35,12 @@ hr{
     margin: auto;
     top: 12px;
     padding: 10px;
-    display: grid;
+    display:grid;  
+    row-gap: 2px;    
+    column-gap: 2px;
+}
+.main-section div{
+    background-color: cadetblue;
 }
 .main-section div{
     border: 2px solid black;
@@ -64,13 +69,15 @@ hr{
    display: flex;
    flex-direction: column;
     align-items: center;
-
+    
+    
     
 }
 
 .design img{
     margin: 2px 0px;
     cursor: pointer;
+    display: block;
 }
 .download{
     display: flex;
