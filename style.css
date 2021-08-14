@@ -5,8 +5,13 @@
 }
 
 
+body{
+    background-color: #1a2332;
+    color: white;
+}
+
 .top-section{
-    background-color:#ebeaeb ;
+    background-color:#141d2b ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +19,7 @@
     font-family: 'Baloo 2', cursive;
 }
 .top-section h3{
-    color: #111439;
+    color: rgb(255, 255, 255);
     font-family: 'Baloo 2', cursive;
     font-size: 22px;
 }
@@ -23,27 +28,27 @@
 }
 hr{
     margin-bottom: 12px;
+    opacity: 20%;
 }
 
 .main-section{
-    border-top: 2px dashed #5350ff;
-    border-right: 2px dashed #7eff50;
-    border-bottom: 2px dashed #ff6550;
-    border-left: 2px dashed #ff5084;
+   
+    background-color: #141d2b;
+    border: 2px solid rgba(255, 0, 170, 0.822);
     width: 90vw;
     height: 80vh;
     margin: auto;
     top: 12px;
     padding: 10px;
     display:grid;  
-    row-gap: 2px;    
-    column-gap: 2px;
+    grid-gap: 4px;
+    border-radius: 9px;
 }
 .main-section div{
-    background-color: cadetblue;
+    background-color: #222222;
 }
 .main-section div{
-    border: 2px solid black;
+    border: 2px solid greenyellow;
 }
 #download{
     width: 70px;
@@ -58,17 +63,19 @@ hr{
     border-top: 2px solid #5350ff;
     border-right: 2px solid #7eff50;
     border-bottom: 2px solid #ff6550;
+    font-family: 'Baloo 2', cursive;
     border-left: 2px solid #ff5084;
     float: left;
     width: 50px;
-    height: 280px;
+    height: 308px;
    position: relative;
    top:128px;
    left: 20px;
-   /* border-radius: 12px; */
    display: flex;
    flex-direction: column;
     align-items: center;
+    border-radius: 12px;
+    background-color: #222222c4;
     
     
     
@@ -88,12 +95,21 @@ hr{
     width: 40px;
     margin-bottom: 3px;
     cursor: pointer;
+    color: #a2a19d;
 }
 .download p:hover{
-    color: green;
+    color: rgb(71, 71, 71);
 }
 
+.effect{
+    
+    border-radius: 12px;
+    transition: .1s;
+}
 
+.effect:hover{
+    background-color: #3d3c3cc4;
+}
 
 .resizer input {
    width: 50px; 
@@ -102,6 +118,7 @@ hr{
 }
 .resizer {
     margin: -88px 9px;
+    color: #a2a19d;
     font-family: 'Baloo 2', cursive;
     width: 80px;
 }
