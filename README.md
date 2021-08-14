@@ -24,3 +24,8 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 #### 40% (Dark Theme, delete button)
 
 ![App Screenshot](img/ss4.PNG)
+
+
+#### 50% (Now you can select div inside design area)
+
+![App Screenshot](img/ss5.PNG)
