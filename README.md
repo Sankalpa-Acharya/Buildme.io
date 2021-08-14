@@ -29,3 +29,9 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 #### 50% (Now you can select div inside design area)
 
 ![App Screenshot](img/ss5.PNG)
+
+
+
+#### 60% (Now you can view your design)
+
+![App Screenshot](img/ss6.gif)
