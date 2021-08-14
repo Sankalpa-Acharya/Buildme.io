@@ -19,3 +19,8 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 #### 30% (Three Buttons will work now- Add div, Add Row, Add Column)
 
 ![App Screenshot](img/ss3.PNG)
+
+
+#### 40% (Dark Theme, delete button)
+
+![App Screenshot](img/ss4.PNG)
