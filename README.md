@@ -35,3 +35,8 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 #### 60% (Now you can view your design)
 
 ![App Screenshot](img/ss6.gif)
+
+
+#### 80% (now you can change size of rows and column in Buidme.io)
+
+![App Screenshot](img/ss6.PNG)
