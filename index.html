@@ -9,38 +9,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/Buildme favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Buildme.io(make easy layout)</title>
+    <title>Buildme.io (Best CSS grid generator )</title>
 </head>
 <body>
    <div class="top-section">
-    <h3>Buildme.io</h3>
-    <div class="download">
+       <h3 id="row-column">Buildme.io</h3>
+       <div class="download">
 
         <img src="https://img.icons8.com/fluency/32/000000/download.png"/>
         <p>Download</p>
     </div>
    </div> 
    <hr>
-
+   
    <div class="design">
        Menu
     <img id="row" class="effect" src="https://img.icons8.com/color/40/000000/add-row.png"/>
     <img id="column" class='effect' src="https://img.icons8.com/color/40/000000/add-column.png"/>
-       <img draggable="false" class="effect" src="https://img.icons8.com/fluency/40/000000/cursor--v2.png"/>
+       <img draggable="false" id="grab" class="effect" src="https://img.icons8.com/fluency/40/000000/cursor--v2.png"/>
        <img draggable="false" id='delete' class="effect" src="https://img.icons8.com/fluency/40/000000/delete-trash.png"/>
        <img id="div" class="effect" src="https://img.icons8.com/fluency/48/000000/rectangle.png"/>
-       <img draggable="false" class="effect" src="https://img.icons8.com/cute-clipart/40/000000/view-file.png"/>
+       <img draggable="false"  id="see" class="effect" src="https://img.icons8.com/cute-clipart/40/000000/view-file.png"/>
 
     </div>
     <div class="main-section">
     </div>
     <div class="resizer">
 
-        W:<input value="22" id="width"  type="tel"><br>
-        H:<input value="22" id="height" type="text">
-        
+CR:<input id="cr" placeholder="C/R no"  type="tel"><br>
+&nbsp;&nbsp;S:<input placeholder="Size" id="size" type="text">  
+<span id="save">Save</span>
     </div>
-    <!-- <script src="src/effect.js"></script> -->
+    <div id="pre-view"></div>
+    <div class="pop-up">
+        <div class="top">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <hr>
+        <div class="working">
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.js"></script>
     <script src="src/main.js"></script>
+    <script src="src/effect.js"></script>
 </body>
 </html>
