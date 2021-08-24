@@ -1,7 +1,7 @@
 //If you are reading the code ,message for you 'Code is not written in proper manner so just use application'
 
 
-//selecting all the menu buttons and setting their values to use 
+//selecting all the menu buttons and giving their values to use 
 number_of_row=0;
 number_of_column=0;
 number_of_div=0;
