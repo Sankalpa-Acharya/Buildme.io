@@ -40,3 +40,9 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 #### 80% (now you can change size of rows and column in Buidme.io)
 
 ![App Screenshot](img/ss6.PNG)
+
+
+
+#### 90% (making custom popup for grid-start and grid-end)
+
+![App Screenshot](img/ss7.PNG)
