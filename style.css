@@ -96,10 +96,10 @@ hr{
     width: 40px;
     margin-bottom: 3px;
     cursor: pointer;
-    color: #a2a19d;
+    color: #b4bfdf;
 }
 .download p:hover{
-    color: #b4bfdf;
+    color: #a2a19d;
 }
 
 .effect{
@@ -185,9 +185,60 @@ hr{
 
 
 .working{
-    position: relative;
-    top: 0px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
 }
+
+.working .part1 input{
+    position: relative;
+    top: 5px;
+    left: -6px;
+}
+
+.working .part1{
+    position: relative;
+    top:-10px;
+    left: 6px;
+}
+.working span{
+    display: block;
+}
+
+#sl-row{
+    margin: 2px 0px;
+}
+
+
+.working input{
+    outline: none;
+    height: 20px;
+}
+
+.working .part2 input{
+    margin: 0px 4px;
+}
+
+.working .save{
+    width: 100px;
+    height: 25px;
+    background-color: rgb(0, 102, 255);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: 12px 0px;
+    user-select: none;
+}
+
+
+
+.working .save:hover{
+    background-color: gray;
+}
+
 
 .pop-up .top{
     display: flex;
@@ -206,21 +257,21 @@ hr{
 
 .top .red{
     background-color: #ff6868;
-    width: 20px ;
-    height: 20px;
+    width: 15px ;
+    height: 15px;
     border-radius: 50%;
     
 }
 .top .green{
-    width: 20px ;
-    height: 20px;
+    width: 15px ;
+    height: 15px;
     background-color: #15bb8a;
     border-radius: 50%;
     
 }
 .top .yellow{
-    width: 20px ;
-    height: 20px;
+    width: 15px ;
+    height: 15px;
     background-color: #ffe411;
     border-radius: 50%;
 
