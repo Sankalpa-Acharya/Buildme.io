@@ -36,8 +36,8 @@
     </div>
     <div class="resizer">
 
-CR:<input id="cr" placeholder="C/R no"  type="tel"><br>
-&nbsp;&nbsp;S:<input placeholder="Size" id="size" type="text">  
+CR:<input id="cr" placeholder="3C/R"  type="tel"><br>
+&nbsp;&nbsp;S:<input placeholder="34(unit)" id="size" type="text">  
 <span id="save">Save</span>
     </div>
     <div id="pre-view"></div>
@@ -47,13 +47,22 @@ CR:<input id="cr" placeholder="C/R no"  type="tel"><br>
             <span class="yellow"></span>
             <span class="green"></span>
         </div>
-        <hr>
         <div class="working">
+            <div class="part1">
+    <span><input type="radio" value="column" name="select" id="sl-col">Column</span>
+               <span><input type="radio" value="row" name="select" id="sl-row"> Row</span>
+            </div>
+            <div class="part2">
+                <span>  Grid-Start:  <input type="text" id="start"></span>
+                <span>  Grid-End:   <input style="margin: 0px 11px;" id="end" type="text"></span> 
+
+            </div>
+           <span class="save">Save</span>
+           
 
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.js"></script>
     <script src="src/main.js"></script>
-    <script src="src/effect.js"></script>
 </body>
 </html>
