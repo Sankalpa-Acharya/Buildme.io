@@ -1,7 +1,7 @@
 //If you are reading the code ,message for you 'Code is not written in proper manner so just use application'
 
 
-//selecting all the menu buttons and giving their values to use 
+//selecting all the menu buttons and setting their values to use 
 number_of_row=0;
 number_of_column=0;
 number_of_div=0;
@@ -18,6 +18,7 @@ let pre_view=document.getElementById('see');
 let top_section=document.querySelector('.top-section');
 let save=document.querySelector('#save');
 let topping=document.querySelector('.top');
+let data_save=document.querySelector('.save');
 let row=''
 let column=''
 let row_column=document.getElementById('row-column');
@@ -53,7 +54,7 @@ adddiv.addEventListener('click',addingdiv);
 function addingdiv(){
     number_of_div++
     let main_section=document.querySelector('.main-section')
-    main_section.innerHTML=main_section.innerHTML+`<div class='items' id='item-${number_of_div}'></div>`
+    main_section.innerHTML=main_section.innerHTML+`<div class='items' id='item-${number_of_div}'></div> \n`
 
     
 }
@@ -102,8 +103,6 @@ function deleted(){
 
 grab.addEventListener('click',grabbing);
 function grabbing(){
-      let grab=document.querySelector('.main-section');
-      grab.setAttribute('style',`grid-template-columns:  ${column};grid-template-rows:${row};cursor:grab;`);
       grabed=true;
       document.getElementById('grab').style.backgroundColor='#3d3c3cc4'
 
@@ -119,16 +118,8 @@ main_section.addEventListener('click',(e)=>{
         if(grabed==true){
         grabed=false;
         selected=e.target.id
-        let grab=document.querySelector('.main-section');
-        grab.setAttribute('style',`grid-template-columns:  ${column};grid-template-rows:${row};cursor:auto;`);
-        let div=document.querySelectorAll('.items');
-        div.forEach(element => {
-            element.removeAttribute('style');
-            document.getElementById('grab').style.backgroundColor='#222222c4'
-            
-        });
-        document.getElementById(selected).style.border='2px solid pink';
-        document.querySelector('.pop-up').style.top='20%'
+        document.querySelector('.pop-up').style.top='20%';
+        document.getElementById('grab').style.backgroundColor='#222222c4'
         
     }
 
@@ -203,3 +194,86 @@ function saving(){
         console.error(error)
     }
 }
+
+
+
+
+data_save.addEventListener('click',data_saved)
+
+function data_saved(){
+
+
+    document.querySelector('.pop-up').style.top='-400px'
+    let grab=document.querySelector('.main-section');
+
+    var values=document.getElementsByName('select');
+    for(let i=0;i<=values.length;i++){
+        if(values[i].checked){
+            if(values[i].value=='row'){
+            var start=document.getElementById('start').value;
+            var end=document.getElementById('end').value;
+           let element= document.getElementById(selected);
+           let css_value=getComputedStyle(element).gridColumn
+           element.setAttribute('style',`grid-row:${start}/${end};grid-column:${css_value}`);
+           break
+        }
+        else{
+            var start=document.getElementById('start').value;
+            var end=document.getElementById('end').value;
+            let element= document.getElementById(selected);
+            let css_value=getComputedStyle(element).gridRow;
+            element.setAttribute('style',`grid-row:${css_value};grid-column:${start}/${end}`)
+            break
+        }
+    }
+}
+    
+}
+
+
+
+document.querySelector('.download').addEventListener('click',()=>{
+
+    var html= `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Buildme.io(BEST CSS GRID GENERATOR)</title>
+        <style>
+        body{
+            overflow-x:hidden;
+        }
+        .main-section{
+            display:grid;
+            width:95vw;
+            height:100vh;
+            grid-gap:3px;
+            overflow-x:hidden;
+            padding:3px;
+        }
+        .main-section div{
+            border:2px solid red;
+            background-color:#3d3c3cc4;
+        }
+        </style>
+    </head>
+    <body>
+       <!-- Code BY BULDME.io  -->
+        ${document.querySelector('.main-section').outerHTML}
+        </body>
+        </html>`
+
+    arr= new Uint8Array(html.length);
+html.split("").forEach(function(a,b){
+	arr[b]=a.charCodeAt();
+});
+   
+ 
+download( arr, "index.html", "text/html" );
+
+
+
+})
