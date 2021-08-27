@@ -243,12 +243,18 @@ document.querySelector('.download').addEventListener('click',()=>{
         <link rel="stylesheet" href="style.css">
         <title>Buildme.io(BEST CSS GRID GENERATOR)</title>
         <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
         body{
             overflow-x:hidden;
         }
         .main-section{
             display:grid;
-            width:95vw;
+            width:100vw;
             height:100vh;
             grid-gap:3px;
             overflow-x:hidden;
@@ -256,7 +262,10 @@ document.querySelector('.download').addEventListener('click',()=>{
         }
         .main-section div{
             border:2px solid red;
-            background-color:#3d3c3cc4;
+            background-color:#0066ff61;
+        }
+        .main-section > div:nth-child(odd){
+            background-color:#10258861;
         }
         </style>
     </head>
