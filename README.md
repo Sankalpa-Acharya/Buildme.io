@@ -32,6 +32,8 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 
 
 
+
+
 #### 60% (Now you can view your design)
 
 ![App Screenshot](img/ss6.gif)
@@ -50,3 +52,5 @@ Buildme.io will help you to design very simple webpage on browser and give you t
 
 ### Buildme.io is Completed 100%
 [check now](http://sankalpa-acharya.github.io/Buildme.io)
+
+### Refresh page if icons are not loading :)
