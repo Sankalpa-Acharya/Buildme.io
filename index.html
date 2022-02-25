@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,34 +12,45 @@
     <link rel="stylesheet" href="style.css">
     <title>Buildme.io (Best CSS grid generator )</title>
 </head>
-<body>
-   <div class="top-section">
-       <h3 id="row-column">Buildme.io</h3>
-       <div class="download">
 
-        <img src="https://img.icons8.com/fluency/32/000000/download.png"/>
-        <p>Download</p>
+<body>
+    <div class="top-section" onclick="removeBorder()">
+        <h3 id="row-column-info">Buildme.io</h3>
+        <button class="btn" onclick="downloadCode()">
+            <img src="./assets/icons/download.png" />
+        </div>
     </div>
-   </div> 
-   <hr>
-   
-   <div class="design">
-       Menu
-    <img id="row" class="effect" src="https://img.icons8.com/color/40/000000/add-row.png"/>
-    <img id="column" class='effect' src="https://img.icons8.com/color/40/000000/add-column.png"/>
-       <img draggable="false" id="grab" class="effect" src="https://img.icons8.com/fluency/40/000000/cursor--v2.png"/>
-       <img draggable="false" id='delete' class="effect" src="https://img.icons8.com/fluency/40/000000/delete-trash.png"/>
-       <img id="div" class="effect" src="https://img.icons8.com/fluency/48/000000/rectangle.png"/>
-       <img draggable="false"  id="see" class="effect" src="https://img.icons8.com/cute-clipart/40/000000/view-file.png"/>
+    <hr>
+
+    <div class="menu_bar">
+        <button class="tooltip" data-text="Add Row"  onclick="addRow()">
+            <img src="./assets/icons/row.png" />
+        </button>
+        <button class="tooltip" onclick="addColumn()" data-text="Add Column">
+            <img  src="./assets/icons/column.png" />
+        </button>
+        <button id="grab" class="tooltip" onclick="toggleGrab()" data-text="Edit Cell">
+            <img draggable="false" src="./assets/icons/mouse.png" />
+        </button>
+        <button class="tooltip" onclick="deleteDiv()" data-text="Delete">
+            <img draggable="false"  src="./assets/icons/trash.png" />
+        </button>
+        <button class="tooltip" onclick="addDiv()" data-text="Add div">
+            <img  src="./assets/icons/add.png" />
+        </button>
+        <button class="tooltip" onclick="toggleView()" data-text="View">
+            <img draggable="false"src="./assets/icons/view.png" />
+        </button>
+
 
     </div>
     <div class="main-section">
     </div>
     <div class="resizer">
 
-CR:<input id="cr" placeholder="3C/R"  type="tel"><br>
-&nbsp;&nbsp;S:<input placeholder="34(unit)" id="size" type="text">  
-<span id="save">Save</span>
+        CR:<input id="cr" placeholder="3C/R" type="tel"><br> &nbsp;&nbsp;S:
+        <input placeholder="34(unit)" id="size" type="text">
+        <span id="save" onclick="saveResizer()">Save</span>
     </div>
     <div id="pre-view"></div>
     <div class="pop-up">
@@ -49,20 +61,21 @@ CR:<input id="cr" placeholder="3C/R"  type="tel"><br>
         </div>
         <div class="working">
             <div class="part1">
-    <span><input type="radio" value="column" name="select" id="sl-col">Column</span>
-               <span><input type="radio" value="row" name="select" id="sl-row"> Row</span>
+                <span><input type="radio" value="column" name="select" id="sl-col">Column</span>
+                <span><input type="radio" value="row" name="select" id="sl-row"> Row</span>
             </div>
             <div class="part2">
-                <span>  Grid-Start:  <input type="text" id="start"></span>
-                <span>  Grid-End:   <input style="margin: 0px 11px;" id="end" type="text"></span> 
+                <span> Grid-Start: <input type="text" id="start"></span>
+                <span> Grid-End: <input style="margin: 0px 11px;" id="end" type="text"></span>
 
             </div>
-           <span class="save">Save</span>
-           
+            <button class="save" onclick="saveData()">Save</button>
+
 
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.js"></script>
     <script src="src/main.js"></script>
 </body>
+
 </html>

@@ -1,173 +1,185 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
-    background-color: #242e55;
+body {
+    background-color: #0b101a;
     color: #adb8d8;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
-.top-section{
-    background-color:#2c3967 ;
+.top-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Baloo 2', cursive;
+    margin: 1em;
 }
-.top-section h3{
+
+.top-section h3 {
     color: whitesmoke;
-    font-family: 'Baloo 2', cursive;
     font-size: 22px;
 }
-.top-section span{
+
+.top-section span {
     font-size: 14px;
 }
-hr{
+
+hr {
     margin-bottom: 12px;
     opacity: 20%;
 }
 
-.main-section{
-   
-    background-color: #141d2ba2;
-    border: 2px solid rgba(255, 0, 170, 0.822);
+.main-section {
+    background-color: #060029fd;
+    border: 2px solid #2209ac80;
     width: 90vw;
     height: 80vh;
     margin: auto;
-    top: 12px;
-    padding: 10px;
-    display:grid;  
-    grid-gap: 4px;
-    border-radius: 9px;
+    top: 0.5em;
+    padding: 0.5em;
+    display: grid;
+    grid-gap: 0.5em;
+    border-radius: 0.25em;
 }
-.main-section div{
+
+.main-section div {
     background-color: #2222229c;
 }
-.main-section div{
-    border: 2px solid greenyellow;
-}
-#download{
-    width: 70px;
-    height: 20px;
-    color: white;
-    background-color:lightgreen;
-    outline: none;
-    margin:8px 0px ;
 
-}
-.design{
-    border-top: 2px solid #5350ff;
-    border-right: 2px solid #7eff50;
-    border-bottom: 2px solid #ff6550;
-    font-family: 'Baloo 2', cursive;
-    border-left: 2px solid #ff5084;
-    float: left;
-    width: 50px;
-    height: 308px;
-   position: relative;
-   top:110px;
-   left: 20px;
-   display: flex;
-   flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    background-color: #222222c4 ;
-    
-    
-    
+.main-section div {
+    border: 2px solid rgb(154, 110, 255);
+    box-shadow: 0 0.5em 1em rgb(12, 0, 0);
 }
 
-.design img{
-    margin: 2px 0px;
+
+/* button */
+
+button {
+    padding: 0.4em;
+    border-radius: 0.75em;
+    margin: 0.16em;
+    background: rgba(51, 51, 51, 0.418);
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 0.4s;
+}
+
+button:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    background: rgba(172, 172, 172, 0.5);
     cursor: pointer;
+}
+
+button>img {
+    width: 2.5em;
+}
+
+.tooltip {
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 95%;
+    margin-left: -50em;
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to top, #1627498e, #16274986);
+    color: white;
+    font-weight: semi-bold;
+    text-align: center;
     display: block;
 }
-.download{
+
+.tooltip:hover:before {
+    margin-left: 0.5em;
+    display: block;
+}
+
+.menu_bar {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 60px;
-    width: 40px;
-    margin-bottom: 3px;
-    cursor: pointer;
-    color: #b4bfdf;
-}
-.download p:hover{
-    color: #a2a19d;
-}
-
-.effect{
-    
-    border-radius: 12px;
-    transition: .1s;
-}
-
-.effect:hover{
-    background-color: #3d3c3cc4;
+    float: left;
+    width: 3.5em;
+    padding: 0.5em;
+    position: relative;
+    top: 10em;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    /* fallback */
+    background-color: #162749a2;
 }
 
 .resizer input {
-   width: 50px; 
-   outline: none;
-   margin: 3px 2px;
+    width: 50px;
+    outline: none;
+    margin: 3px 2px;
 }
+
 .resizer {
     margin: -88px 9px;
     color: #a2a19d;
-    font-family: 'Baloo 2', cursive;
     width: 80px;
 }
-.resizer #width{
-    margin:3px 0px;
+
+.resizer #width {
+    margin: 3px 0px;
 }
 
-#pre-view{
-
+#pre-view {
     width: 100vw;
     height: 100vh;
-    background-color: white;
-    position:absolute ;
-    top:0px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
     transition: .5s;
     display: grid;
     grid-gap: 3px;
-    top: 700px;
+    top: 110vh;
     padding: 3px;
     z-index: 9999999;
 }
 
-#save{
+#save {
     width: 100px;
     height: 100px;
-    background-color: #ef7552;
+    background-color: #0593A2;
     color: white;
-    padding: 0px 6px ;
-    border-radius:3px;
+    padding: 0px 6px;
+    border-radius: 3px;
     user-select: none;
     position: relative;
     top: 4px;
     left: 4px;
-}
-#save:hover{
-    background-color: #f39362;
+    transition: cubic-bezier(1, 0, 0, 1) 0.1s;
 }
 
-#pre-view div{
-
-    border: 2px solid red !important ;
+#save:hover {
+    color: black;
+    background-color: #28ffc9;
+    cursor: pointer;
 }
 
-.pop-up{
+#pre-view div {
+    border: 2px solid red !important;
+}
+
+.pop-up {
     width: 500px;
     height: 400px;
     z-index: 1000;
-    position:absolute;
+    position: absolute;
     display: grid;
     top: -400px;
     left: 32%;
@@ -176,55 +188,51 @@ hr{
     transition: .3s;
     color: white;
     grid-template-rows: 40px 1fr;
-   font-family: 'Baloo 2', cursive;
-   border: 2px solid white;
-   overflow: hidden;
+    border: 2px solid white;
+    overflow: hidden;
 }
 
-
-
-
-.working{
+.working {
     color: black;
     display: flex;
     flex-direction: column;
     padding: 4em;
 }
 
-.working .part1 input{
+.working .part1 input {
     position: relative;
     top: 5px;
     left: -6px;
 }
 
-.working .part1{
+.working .part1 {
     position: relative;
-    top:-10px;
+    top: -10px;
     left: 6px;
 }
-.working span{
+
+.working span {
     display: block;
 }
 
-#sl-row{
+#sl-row {
     margin: 2px 0px;
 }
 
-
-.working input{
+.working input {
     outline: none;
     height: 20px;
 }
 
-.working .part2 input{
+.working .part2 input {
     margin: 0px 4px;
 }
 
-.working .save{
+.working .save {
     width: 100px;
     height: 25px;
     background-color: rgb(0, 102, 255);
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,46 +241,39 @@ hr{
     user-select: none;
 }
 
-
-
-.working .save:hover{
+.working .save:hover {
     background-color: gray;
 }
 
-
-.pop-up .top{
+.pop-up .top {
     display: flex;
     justify-content: left;
     align-items: center;
     background-color: #564d7a;
-
 }
 
-.top span{
+.top span {
     margin: 0px 6px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-
-
-.top .red{
+.top .red {
     background-color: #ff6868;
-    width: 15px ;
+    width: 15px;
     height: 15px;
     border-radius: 50%;
-    
 }
-.top .green{
-    width: 15px ;
+
+.top .green {
+    width: 15px;
     height: 15px;
     background-color: #15bb8a;
     border-radius: 50%;
-    
 }
-.top .yellow{
-    width: 15px ;
+
+.top .yellow {
+    width: 15px;
     height: 15px;
     background-color: #ffe411;
     border-radius: 50%;
-
 }
